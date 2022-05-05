@@ -20,11 +20,11 @@ session_start();
 	<div id="sideNav">
 		<nav>
 			<ul>
-				<li><a href="home-acceptor">Home</a></li>
+				<li><a href="home-acceptor.php">Home</a></li>
 				<li><a href="abt.php">About Us</a></li>
 				<li><a href="contact.php">Contact</a></li>
 				<li><a href="hospital-list.php">Hospitals</a></li>
-				<li><a href="index.php">Logout</a></li>
+				<li><a href="../index.php">Logout</a></li>
 			</ul>
 		</nav>
 	  </div>

@@ -64,7 +64,7 @@ session_start();
 			<ul>
 				<li><a href="request-list.php">Recent Request</a></li>
 				<li><a href="donates-to-list.php">Donation List</a></li>
-				<li><a href="receipt-list.php">Patient List</a></li>
+				<li><a href="receipt-list.php">Receipt List</a></li>
 				<li><a href="about1.php">About Us</a></li>
 				<li><a href="contact1.php">Contact</a></li>
 				<li><a href="hospital-list.php">Hospitals</a></li>

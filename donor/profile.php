@@ -151,7 +151,7 @@ console.log(res);
         <table id="customers" style="margin: 0px auto;">
             <tr>
               <th>Test Date</th>
-              <th>Hospital</th>
+              <th>Disease</th>
 
             </tr>
       <?php

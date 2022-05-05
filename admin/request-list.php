@@ -16,7 +16,7 @@ session_start();
 </head>
 <body>
 	<br>
-<p align="center">Patient List</p>
+<p align="center">Request List</p>
 <br>
 <table id="customers" style="margin: 0px auto;">
   <tr>
@@ -60,7 +60,7 @@ while ($p=$q->fetch(PDO::FETCH_OBJ)) {
 			
 			    <li><a href="admin-main.php">Home</a></li>
 				<li><a href="donates-to-list.php">Donation List</a></li>
-				<li><a href="receipt-list.php">Patient List</a></li>
+				<li><a href="receipt-list.php">Receipt List</a></li>
 				<li><a href="about1.php">About Us</a></li>
 				<li><a href="contact1.php">Contact</a></li>
 				<li><a href="hospital-list.php">Hospitals</a></li>
