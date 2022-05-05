@@ -65,7 +65,7 @@ session_start();
 				<li><a href="abt.php">About Us</a></li>
 				<li><a href="contact.php">Contact</a></li>
 				<li><a href="hospital-list.php">Hospitals</a></li>
-				<li><a href="logout.php">Log out</a></li>
+				<li><a href="../index.php">Log out</a></li>
 			</ul>
 		</nav>
 	</div>
