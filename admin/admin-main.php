@@ -42,7 +42,7 @@ session_start();
 			<div class="right">
 			<div class="a">
 
-<a href="patient-list.php">Acceptor List</a>
+<a href="diagnosis.php">Register Diagnosis</a>
  </div>
 			       <div class="a">
 				   <a href="receipt-reg.php">Register Receipt</a>
