@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+
+    <div class="Profile">
+        <h3 class="m-profile">My Profile</h3>
+        <ul>
+            <li>
+                <span class="Id">ID:</span>
+                <span class="text">  </span>
+            </li>
+            <li>
+                <span class="name">Name</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="address">Address</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="phone">Phone</i></span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="email">Email</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="age">Age</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="b-group">Blood Group:</i></span>
+                <span class="text"></span>
+                <span id="result"></span>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="history">
+
+        <h3 class="history">Donation History</h3>
+        <table id="history" style="margin: 0px auto;">
+            <tr>
+                <th>Test Date</th>
+                <th>Hospital</th>
+        
+            </tr>
+            <?php
+        $q=$db->query("SELECT * FROM hospital");
+        while ($p=$q->fetch(PDO::FETCH_OBJ)) {
+            ?>
+            <tr>
+                <td><?= $p->h_id; ?></td>
+                <td><?= $p->h_name; ?></td>
+              
+          </tr>
+
+    </div>
+
+    <div class="blood-test-result">
+
+        <h3 class="blood-test-result">Recent Blood Test Result:</h3>
+        <table id="blood-test-result" style="margin: 0px auto;">
+            <tr>
+                <th>Test Date</th>
+                <th>Disease</th>
+        
+            </tr>
+            <?php
+        $q=$db->query("SELECT test_date, disease FROM diagnosis WHERE d_id=101");
+        while ($p=$q->fetch(PDO::FETCH_OBJ)) {
+            ?>
+            <tr>
+                <td><?= $p->h_id; ?></td>
+                <td><?= $p->h_name; ?></td>
+              
+          </tr>
+
+    </div>
+
+
+    <script>
+		document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+		</script>
+<script>
+    
+</body>
+</html>

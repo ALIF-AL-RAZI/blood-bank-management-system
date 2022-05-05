@@ -1,0 +1,260 @@
+and dt.h_id=hs.h_i
+
+SELECT DISTINCT dt.d_id, dn.d_name, dn.d_b_group, hs.h_name, dt.test_date
+from donates_to as dt, donor as dn, hospital as hs
+where dt.d_id=dn.d_id and dt.h_id=hs.h_id;
+
+
+SELECT DISTINCT req.a_id, acc.a_name, acc.a_b_group, hs.h_name, hs.h_address, req.test_date
+from request as req, acceptor as acc, hospital as hs
+where req.a_id=acc.a_id and req.h_id=hs.h_id;
+
+
+<div class="a" align="left" style=" position: relative; left: 100px;">
+    <ul style="list-style:none;">
+    	<br><br>
+		<a align="center" href="donor-red.php">Donor Registration</a>
+	</div>
+		<br><br>
+			<br>
+  <div class="a"align="center">
+    
+    <ul style="list-style:none;">
+    	<br><br>
+        <a href="donor-list.php">Donor List</a>
+        <br><br>
+        <br>
+  <div class="a"align="center">
+    
+    <ul style="list-style:none;">
+    	<br><br>
+        <a href="blood.php">Search for Blood</a>
+        <br><br>
+            <br>
+  <div class="a"align="center">
+    
+    <ul style="list-style:none;">
+    	<br><br>
+        <a href="patient-red.php">Patient Registration</a>
+        <br><br>
+            <br>
+  <div class="a"align="center">
+    
+    <ul style="list-style:none;">
+    	<br><br>
+        <a href="patient-list.php">Patient List</a>
+        <br><br>
+            <br>
+  <div class="a"align="center">
+    
+    <ul style="list-style:none;">
+    	<br><br>
+        <a href="patient-list - Copy (2).php">Donation List</a>
+	</div>
+
+
+
+
+
+
+
+<label>Last Donated:</label>
+			<input id="date" name="date" type="date" value="2019-01-01">
+		 <br /><br />
+
+
+
+
+
+
+
+
+<script> 
+function passvalues()
+{
+	var firstname=document.getElementById("dd_id").value;
+	localStorage.setItem("textvalue", firstname);
+	return false;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Profile">
+        <h3 class="m-profile">My Profile</h3>
+        <ul>
+            <li>
+                <span class="Id">ID:</span>
+                <span class="text">  </span>
+            </li>
+            <li>
+                <span class="name">Name</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="address">Address</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="phone">Phone</i></span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="email">Email</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="age">Age</span>
+                <span class="text"></span>
+            </li>
+            <li>
+                <span class="b-group">Blood Group:</i></span>
+                <span class="text"></span>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="history">
+
+        <h3 class="history">Donation History</h3>
+        <table id="history" style="margin: 0px auto;">
+            <tr>
+                <th>Test Date</th>
+                <th>Hospital</th>
+        
+            </tr>
+            /*<?php
+        $q=$db->query("SELECT * FROM hospital");
+        while ($p=$q->fetch(PDO::FETCH_OBJ)) {
+            ?>
+            <tr>
+                <td><?= $p->h_id; ?></td>
+                <td><?= $p->h_name; ?></td>
+              
+          </tr>*/
+
+    </div>
+
+    <div class="blood-test-result">
+
+        <h3 class="blood-test-result">Recent Blood Test Result:</h3>
+        <table id="blood-test-result" style="margin: 0px auto;">
+            <tr>
+                <th>Test Date</th>
+                <th>Disease</th>
+        
+            </tr>
+            /*<?php
+        $q=$db->query("SELECT test_date, disease FROM diagnosis WHERE d_id=101");
+        while ($p=$q->fetch(PDO::FETCH_OBJ)) {
+            ?>
+            <tr>
+                <td><?= $p->h_id; ?></td>
+                <td><?= $p->h_name; ?></td>
+              
+          </tr>*/
+
+    </div>
+    <div class="banner-btn">
+	<div id="sideNav">
+		<nav>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="abt.php">About Us</a></li>
+				<li><a href="contact.php">Contact</a></li>
+				<li><a href="hospital1.php">Hospitals</a></li>
+				<li><a href="acceptor-signin.php">Login</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+	<div id="menuBtn">
+		<img src="images/menu.png" id="menu">
+	</div>
+
+
+
+
+
+
+
+
+
+<div class="container">
+		    <div class="left">
+			   <div class="a">
+			   <a align="center" href="donor-red.php"><img src="pngwing.png"><div class="centered">Donor Registration</div></a>
+			   
+			   
+
+                </div>
+
+
+
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+
+
+
+
+<div class="a">
+			   <a href="donor-red.php">Donor Registration</a>
+			   
+			   
+
+                </div>
+
+
+
+
+
+
+
+	<script>
+		document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+		</script>
+<script>
+
+
+function passvalues()
+{
+	var firstname=document.getElementById("d_id").value;
+	localStorage.setItem("textvalue", firstname);
+	return false;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
